@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sowmya Vankayalapati - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#todo">To-Do</a></li>
+      <li><a href="#products">Products</a></li>
+    </ul>
+  </nav>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="portfolio-header">
+      <h1>👩‍💻 Sowmya Vankayalapati</h1>
+      <p class="tagline">Frontend Developer | B.Tech CSE Student</p>
+    </div>
+
+    <div class="portfolio-about">
+      <h2>👋 About Me</h2>
+      <p>
+        Hello! I'm <strong>Sowmya Vankayalapati</strong>, a passionate frontend developer with skills in HTML, CSS, JavaScript, and Cloud Computing.  
+        I enjoy solving problems, building responsive web applications, and creating intuitive user experiences.
+      </p>
+    </div>
+
+    <div class="portfolio-skills">
+      <h2>🛠️ Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Python & C</li>
+        <li>Cloud Computing</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
+    <div class="portfolio-projects">
+      <h2>📁 Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>To-Do List App</h3>
+          <p>Manage your daily tasks efficiently using localStorage.</p>
+        </div>
+        <div class="project-card">
+          <h3>Product Catalog</h3>
+          <p>Browse items by category or rating with filter and sort features.</p>
+        </div>
+        <div class="project-card">
+          <h3>Cloud Jumpstart</h3>
+          <p>A project exploring cloud services and deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-contact">
+      <h2>📬 Contact</h2>
+      <p>Email: <a href="mailto:sowmya@example.com">sowmya@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/sowmyavankayalapati" target="_blank">github.com/sowmyavankayalapati</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/sowmya-vankayalapati" target="_blank">linkedin.com/in/sowmya-vankayalapati</a></p>
+    </div>
+  </section>
+
+  <!-- To-Do List Section -->
+  <section id="todo">
+    <h1>📝 To-Do List</h1>
+    <input type="text" id="task" placeholder="Enter a new task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Product Listing Section -->
+  <section id="products">
+    <h1>🛍️ Product Catalog</h1>
+    <select id="categoryFilter" onchange="filterProducts()">
+      <option value="all">All Categories</option>
+      <option value="books">Books</option>
+      <option value="electronics">Electronics</option>
+    </select>
+
+    <select id="sortOption" onchange="sortProducts()">
+      <option value="default">Sort By</option>
+      <option value="price">Price</option>
+      <option value="rating">Rating</option>
+    </select>
+
+    <div id="productList"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
